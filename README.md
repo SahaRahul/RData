@@ -1,13 +1,15 @@
----
-layout: page
-title: About
----
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius, risus nec viverra pretium, erat massa congue libero, sit amet varius quam nibh at tellus. Vivamus a sapien sit amet velit pretium molestie. Nulla at mauris nec urna tincidunt egestas at id massa. Praesent varius velit urna. Sed sit amet dignissim purus. Phasellus vestibulum pellentesque sem sit amet eleifend. Sed tristique velit vel urna rhoncus, eget fermentum ante tempus. Ut placerat laoreet orci eget rhoncus. Pellentesque semper laoreet ipsum, eu suscipit libero gravida nec. Praesent sollicitudin elit et tincidunt tristique. Aenean ultricies, nisl vitae blandit egestas, magna urna blandit ligula, ut fermentum dolor neque eu augue. Quisque euismod posuere lacus condimentum tristique.
-
-Licensing
-----------
-
-Video content within the course is released under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/). All other content, including lessons, slides, and quizzes, is released under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-The basic template of this site was based on code for [Jeffrey Leek's home page](http://jtleek.github.io). The code for this site (found [here](http://github.com/dgrtwo/RData)) is released under the MIT License.
++Data Analysis and Visualization Using R: Course Website
++=====
++
++This is the source code for the [Data Analysis and Visualization Using R course website](http://dgrtwo.github.io/RData/).
++
++The course, material and site were created by [David Robinson](http://dgrtwo.github.io) with contributions from Neo Christopher Chung. For license and copyright information, see [here](http://dgrtwo.github.io/RData/about).
++
++Technical Details
++=====
++
++This page is hosted on [Github Pages](https://pages.github.com/) and powered by static site generator [Jekyll](http://jekyllrb.com/), meaning it's free to host on GitHub. Please feel free to adapt the site to your own course.
++
++The course is divided into **Lessons**, which are each in turn divided into **Segments**. You first build an outline of your courses in the [_data/outline.yml](_data/outline.yml) file, which contains an outline of the course in [YAML](http://www.yaml.org/) format.
++
++The one catch is that if you *add* lessons or segments (not just changing their titles or content), you should re-run the [_scripts/generate_lessons.py](generate_lessons.py) script to create empty pages for them. This requires Python and the [PyYAML](http://pyyaml.org/) package.
